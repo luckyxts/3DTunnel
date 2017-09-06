@@ -177,7 +177,7 @@ Tunnel.prototype.render = function(){
     this.updateCurveVertices();
 
     //加速系统
-    // this.updateSpeed();
+    this.updateSpeed();
     this.camera.rotation.y = Math.PI;
     this.renderer.render(this.scene,this.camera);
     requestAnimationFrame(this.render.bind(this));
