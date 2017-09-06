@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            overflow:hidden;
+            margin:0;
+            padding:0;
+        }
+    </style>
+    <script src="./../../lib/three.js"></script>
+    <script src="./js/Tunnel.js"></script>
+    <!--<script src="./js/TrackballControls.js"></script>-->
+</head>
+<body>
+    <div id="tubes"></div>
+    <script>
+        var loader = new THREE.TextureLoader();
+        loader.load(
+            "./image/galaxyTexture.jpg",function(texture){
+                new Tunnel(texture);
+            }
+        );
+
+
+    </script>
+</body>
+</html>
